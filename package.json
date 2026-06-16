@@ -1,7 +1,7 @@
-{
-	"name": "claude-dev",
+﻿{
+	"name": "gbt-xiaotudou-ai",
 	"displayName": "⚕ GBT小土豆",
-	"description": "Autonomous coding agent right in your IDE, capable of creating/editing files, running commands, using the browser, and more with your permission every step of the way.",
+	"description": "GBT小土豆全能AI编程助手 - 在IDE中自主创建/编辑文件、执行命令、浏览网页，每一步都经授权。17个MCP能力服务器协同工作。",
 	"version": "3.89.2",
 	"icon": "assets/icons/icon.png",
 	"engines": {
@@ -11,12 +11,12 @@
 		"name": "GBT小土豆"
 	},
 	"license": "Apache-2.0",
-	"publisher": "saoudrizwan",
+	"publisher": "paysssk-creator",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/cline/cline"
+		"url": "https://github.com/paysssk-creator/GBT-xiaotudou-ai"
 	},
-	"homepage": "https://cline.bot",
+	"homepage": "https://gbtxiaotudou.com",
 	"categories": [
 		"AI",
 		"Chat",
@@ -111,17 +111,17 @@
 		"viewsContainers": {
 			"activitybar": [
 				{
-					"id": "claude-dev-ActivityBar",
+					"id": "gbt-xiaotudou-ActivityBar",
 					"title": "⚕ GBT小土豆",
 					"icon": "assets/icons/icon.svg"
 				}
 			]
 		},
 		"views": {
-			"claude-dev-ActivityBar": [
+			"gbt-xiaotudou-ActivityBar": [
 				{
 					"type": "webview",
-					"id": "claude-dev.SidebarProvider",
+					"id": "gbt-xiaotudou.SidebarProvider",
 					"name": "",
 					"icon": "assets/icons/icon.svg"
 				}
@@ -247,7 +247,7 @@
 			{
 				"command": "editor.action.submitComment",
 				"key": "enter",
-				"when": "commentEditorFocused && commentController == cline-ai-review && !commentIsEmpty"
+				"when": "commentEditorFocused && commentController == gbt-ai-review && !commentIsEmpty"
 			},
 			{
 				"command": "gbt.addToChat",
@@ -275,27 +275,27 @@
 				{
 					"command": "gbt.plusButtonClicked",
 					"group": "navigation@1",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == gbt-xiaotudou.SidebarProvider"
 				},
 				{
 					"command": "gbt.mcpButtonClicked",
 					"group": "navigation@2",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == gbt-xiaotudou.SidebarProvider"
 				},
 				{
 					"command": "gbt.historyButtonClicked",
 					"group": "navigation@3",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == gbt-xiaotudou.SidebarProvider"
 				},
 				{
 					"command": "gbt.accountButtonClicked",
 					"group": "navigation@5",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == gbt-xiaotudou.SidebarProvider"
 				},
 				{
 					"command": "gbt.settingsButtonClicked",
 					"group": "navigation@6",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == gbt-xiaotudou.SidebarProvider"
 				}
 			],
 			"editor/context": [
@@ -360,14 +360,14 @@
 				{
 					"command": "gbt.reviewComment.reply",
 					"group": "inline",
-					"when": "commentController == cline-ai-review"
+					"when": "commentController == gbt-ai-review"
 				}
 			],
 			"comments/commentThread/title": [
 				{
 					"command": "gbt.reviewComment.addToChat",
 					"group": "inline",
-					"when": "commentController == cline-ai-review"
+					"when": "commentController == gbt-ai-review"
 				}
 			]
 		},
